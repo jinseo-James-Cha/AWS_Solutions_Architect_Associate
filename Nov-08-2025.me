@@ -1,0 +1,63 @@
+# AWS Regions
+- all around world
+
+- where should you choose a region?
+1. Compliance : with data governance and legal requirements
+2. Proximity: reduce latency
+3. Available Services: not every service in every regions
+4. Pricing
+
+
+# AWS AZ(availability Zones)
+- They are separate from each to be isolated from disasters!
+
+
+# AWS Points of Presence(Edge Locations)
+
+
+# Route 53 - global service no region selection
+
+# IAM: Users a& Groups
+- IAM: Identity and Access Management, Global service
+- Root account: shouldn't be used or shared
+- Users: within organization and can be grouped
+- Groups: can contain users, not other Groups
+* users can belong to multiple groups~ or nothing
+
+# IAM permissions
+- Json format
+- Least Privilege Principle
+
+# IAM Policies Structure
+- version
+- Identity
+- statement
+-- sid(optional)
+-- effect
+-- Principal
+-- Action
+-- Resource
+-- Condition(optional)
+
+## AdiministratorAccess
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "*",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+# IAM Password Policy
+
+# Multi Factor Authentication - MFA
+- password + security device
+- devices
+-- virtual MFA device - like OTP 6 digits..
+-- Universal 2nd Factor U2F security key - like Yubikey..
+-- and so on..
