@@ -1,0 +1,6 @@
+# EBS volume 
+- Elastic Block Store
+- a network drive you can attach
+- attach one instance at a time
+- bound to a specific availability zone
+- "network USB stick"
