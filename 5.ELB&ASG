@@ -1,0 +1,35 @@
+# Scalability - can handle greater loads by adapting
+## vertical scalability
+- (UP)increasing "size" of instance eg) t2.micro -> m2.large
+- common for non distributed systems -> DB
+- RDS, ElastiCache..
+- hardware limit
+- scale up / down
+
+## horizontal scalability(Elasticity
+- increasing "number" of instance eg) 1 * t2.micro -> 2 * t2.micro
+- disbributed systems
+- wep application/ modern application
+- EC2...
+- scale out(+) / in(-)
+
+# High Availability
+- hand in had with horizontal scaling
+- means running apps/systems at least 2 data centers( == AZ)
+- to survice a data center loss
+- passive -> RDS multi AZ
+- active -> Horizontal scaling
+
+# ELB
+- health check
+- 4types of LB
+  1. Classic CLB - depreciated
+  2. Application ALB
+  3. Networt NLB
+  4. Gateway GLB
+
+## ALB
+- layer 7(Http)
+- routing
+- great fit for MS or container-based app(ECS)
+- target groups
