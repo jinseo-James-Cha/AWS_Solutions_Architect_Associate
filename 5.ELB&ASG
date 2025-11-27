@@ -29,7 +29,7 @@
   4. Gateway GLB
 
 ## ALB
-client -> ALB -> SG -> 1.EC2 2.EC2
+client -> ALB -> Target Group(1.EC2 2.EC2) -> ec2 Security Group -> allow alb in inbound rule
 - layer 7(Http)
 - routing
 - great fit for MS or container-based app(ECS)
