@@ -29,7 +29,19 @@
   4. Gateway GLB
 
 ## ALB
+client -> ALB -> SG -> 1.EC2 2.EC2
 - layer 7(Http)
 - routing
 - great fit for MS or container-based app(ECS)
 - target groups
+
+
+## NLB(layer 4)
+- TCP & UDP traffics
+- milions of requests per seconds
+- ultra-low latency
+- "One static IP per AZ" 
+- supports assigning Elastic IP
+- health check -> TCP, HTTP, HTTPS
+
+
